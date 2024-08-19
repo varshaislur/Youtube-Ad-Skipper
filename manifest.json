@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "manifest_version": 3,
+    "name":"Youtube Video Skipper",
+    "description":"This extension will skip youtube add for you or show you a message if the ad is not skippable",
+    "permissions":[
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts":[
+        {
+            "js":["script.js"],
+            "run_at":"document_idle",
+            "matches":["<all_urls>"]
+        }
+    ]
+}
